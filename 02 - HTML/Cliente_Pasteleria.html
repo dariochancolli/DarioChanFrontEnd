@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería_Usuario</title>
+
+    <!--Diseño-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #ce6f8f;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #79085C;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #ce6f8f;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #ce6f8f;
+            padding: 10px;
+            text-align: center;
+            color: #79085C;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+    
+        
+        <h1>
+            <img src="Pictures/Logo.png" alt="Logo Dulce Momento" id="Logo" width="250"> 
+            Dulce Momento
+        </h1>
+        <h3>Endulza tus recuerdos</h3>
+    </header>
+    
+    <h2 align="Center">Sabores de los pasteles</h2>
+    
+    <p align="Center">
+        Estos son los sabores de pasteles que tenemos disponibles, puedes escoger uno solo
+        o combinar sabores.
+    </p>
+    
+    <table width="1000" align="Center">
+        <tr>
+            <th>3 Leches</th>
+            <th>Chocolate</th>
+            <th>Red Velvet</th>
+        </tr>
+
+        <tr>
+            <td align="Center"><img src="Pictures/Sabores/PLeche.jpg" alt="Sabor 3 Leches" 
+                id="Chocolate" width="200" ></td>
+            <td align="Center"><img src="Pictures/Sabores/PChocolate.jpg" alt="Sabor Chocolate" 
+                id="3Leches" width="200" ></td>
+            <td align="Center"><img src="Pictures/Sabores/PRedVelvet.jpg" alt="Sabor Red Velvet" 
+                id="RedVelvet" width="200" ></td>
+        </tr>
+
+        <tr>
+            <td>Chico $100</td>
+            <td>Chico $120</td>
+            <td>Chico $120</td> 
+        </tr>
+        
+        <tr>
+            <td>Mediano $120</td>
+            <td>Mediano $150</td>
+            <td>Mediano $150</td> 
+        </tr>
+
+        <tr>
+            <td>Grande $150</td>
+            <td>Grande $180</td>
+            <td>Grande $180</td> 
+        </tr>
+
+    </table>
+
+
+    <h3 align="Center"> Sabores combinados</h3>
+
+    <table width="1000" align="Center">
+        <tr>
+            <th>3 Leches/Chocolate</th>
+            <th>3 Leches/Red Velvet</th>
+            <th>Chocolate/Red Velvet</th>
+            <th>3 Sabores</th>
+        </tr>
+
+        <tr>
+            <td>Chico $130</td>
+            <td>Chico $130</td>
+            <td>Chico $130</td>
+            <td>Chico $150</td> 
+        </tr>
+        
+        <tr>
+            <td>Mediano $160</td>
+            <td>Mediano $160</td>
+            <td>Mediano $160</td> 
+            <td>Mediano $180</td> 
+        </tr>
+
+        <tr>
+            <td>Grande $180</td>
+            <td>Grande $180</td>
+            <td>Grande $180</td>
+            <td>Grande $200</td> 
+        </tr>
+    </table>
+
+    <h2 align="Center">Adornos</h2>
+
+    <p align="Center">
+        Aquí puedes observar los adornos que tenemos disponibles, puedes escoger uno
+        o combinar varios adornos. <br>
+        Nota: Se paga por adorno, al combinar solamente se suman precios.
+    </p>
+
+    <table width="1000" align="Center">
+        <tr>
+            <th>Frase con Chispas</th>
+            <th>Galletas Trozeadas</th>
+            <th>Frutas</th>
+        </tr>
+
+        <tr>
+            <td align="Center"><img src="Pictures/Adornos/LetrasChispas.jpg" alt="Letras con Chispas" 
+                id="LetrasChispas" width="200" ></td>
+            <td align="Center"><img src="Pictures/Adornos/Galletas.jpg" alt="Galletas Trozeadas" 
+                id="Galletas" width="200" ></td>
+            <td align="Center"><img src="Pictures/Adornos/Frutas.jpg" alt="Frutas" 
+                id="Frutas" width="200" ></td>
+        </tr>
+
+        <tr>
+            <td> $10</td>
+            <td> $20</td>
+            <td> $20</td> 
+        </tr>
+
+    </table>
+
+    <h2 align="Center">Pedido</h2>
+
+    <p align="Center"> Si desea ordenar algún pastel, rellene con sus datos el siguiente formulario.</p>
+    <br>
+
+    <hr>
+    <h4>Datos de contacto</h4>
+    <label for="name1">Nombre</label><br>
+    <input type="name" id="name1" name="name1"><br><br>
+
+    <label for="tel1">Celular o Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+    <label for="correo1">Correo</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+
+    <label for="pastel">Tamaño</label>
+    <select id="pastel" name="pastel">
+        <option value="Chico">Chico</option>
+        <option value="Mediano">Mediano</option>
+        <option value="Grande">Grande</option>
+    </select>
+
+    <h4>Selecciona el sabor o sabores de tu pastel</h4>
+    <input type="checkbox" id="Sabor1" name="sabor1" value="3Leches">
+    <label for="sabor1">3 Leches</label><br>
+    <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+    <label for="sabor2">Chocolate</label><br>
+    <input type="checkbox" id="Sabor3" name="sabor3" value="RedVelvet">
+    <label for="sabor3">Red Velvet</label><br><br>
+
+    <h4>Selecciona el adorno o adornos de tu pastel</h4>
+    <input type="checkbox" id="topping1" name="topping1" value="LetrasChispas">
+    <label for="topping1">Letras con Chispas</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Galletas">
+    <label for="topping2">Galletas Trozeadas</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Frutas">
+    <label for="topping3">Frutas</label><br><br>
+
+    <hr>
+
+
+
+
+    <footer>
+        <p>Dirección: Calle 47, Zona Paseo Montejo, Centro, 97000 Mérida, Yuc.</p>
+        <p>Celular: +52 9919593923</p>
+        <p>Lunes a Domingo de 9:00 AM a 6:00 PM</p>
+    </footer>
+    
+</body>
+</html>

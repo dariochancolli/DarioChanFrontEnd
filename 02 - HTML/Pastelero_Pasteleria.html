@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería_Pastelero</title>
+
+    <!--Diseño-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #ce6f8f;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #79085C;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #ce6f8f;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #ce6f8f;
+            padding: 10px;
+            text-align: center;
+            color: #79085C;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+    
+        
+        <h1>
+            <img src="Pictures/Logo.png" alt="Logo Dulce Momento" id="Logo" width="250"> 
+            Dulce Momento
+        </h1>
+        <h3>Endulza tus recuerdos</h3>
+        <h3>Página del Pastelero</h3>
+    </header>
+    
+    <h2 align="Center">Sabores de los pasteles</h2>
+    
+    <p align="Center">
+        Estos es el inventario de pasteles y la cantidad que se podrían hacer con los materiales
+        que se tienen en bodega
+    </p>
+    
+    <table width="1000" align="Center">
+        <tr>
+            <th>3 Leches</th>
+            <th>Chocolate</th>
+            <th>Red Velvet</th>
+        </tr>
+
+        <tr>
+            <td align="Center"><img src="Pictures/Sabores/PLeche.jpg" alt="Sabor 3 Leches" 
+                id="Chocolate" width="200" ></td>
+            <td align="Center"><img src="Pictures/Sabores/PChocolate.jpg" alt="Sabor Chocolate" 
+                id="3Leches" width="200" ></td>
+            <td align="Center"><img src="Pictures/Sabores/PRedVelvet.jpg" alt="Sabor Red Velvet" 
+                id="RedVelvet" width="200" ></td>
+        </tr>
+
+        <tr>
+            <td>Chico 10</td>
+            <td>Chico 10</td>
+            <td>Chico 10</td> 
+        </tr>
+        
+        <tr>
+            <td>Mediano 10</td>
+            <td>Mediano 10</td>
+            <td>Mediano 8</td> 
+        </tr>
+
+        <tr>
+            <td>Grande 15</td>
+            <td>Grande 18</td>
+            <td>Grande 15</td> 
+        </tr>
+
+    </table>
+
+
+    <h3 align="Center"> Sabores combinados</h3>
+
+        
+    <p align="Center">
+        Para los sabores combinados, es un inventario distinto, se considera material distinto
+        al de los pasteles de un solo sabor
+    </p>
+
+    <table width="1000" align="Center">
+        <tr>
+            <th>3 Leches/Chocolate</th>
+            <th>3 Leches/Red Velvet</th>
+            <th>Chocolate/Red Velvet</th>
+            <th>3 Sabores</th>
+        </tr>
+
+        <tr>
+            <td>Chico 8</td>
+            <td>Chico 8</td>
+            <td>Chico 8</td>
+            <td>Chico 8</td> 
+        </tr>
+        
+        <tr>
+            <td>Mediano 10</td>
+            <td>Mediano 6</td>
+            <td>Mediano 8</td> 
+            <td>Mediano 10</td> 
+        </tr>
+
+        <tr>
+            <td>Grande 10</td>
+            <td>Grande 12</td>
+            <td>Grande 8</td>
+            <td>Grande 15</td> 
+        </tr>
+    </table>
+
+    <h2 align="Center">Adornos</h2>
+
+    <p align="Center">
+        Cantidad de adornos disponibles para pasteles.
+    </p>
+
+    <table width="1000" align="Center">
+        <tr>
+            <th>Frase con Chispas</th>
+            <th>Galletas Trozeadas</th>
+            <th>Frutas</th>
+        </tr>
+
+        <tr>
+            <td align="Center"><img src="Pictures/Adornos/LetrasChispas.jpg" alt="Letras con Chispas" 
+                id="LetrasChispas" width="200" ></td>
+            <td align="Center"><img src="Pictures/Adornos/Galletas.jpg" alt="Galletas Trozeadas" 
+                id="Galletas" width="200" ></td>
+            <td align="Center"><img src="Pictures/Adornos/Frutas.jpg" alt="Frutas" 
+                id="Frutas" width="200" ></td>
+        </tr>
+
+        <tr>
+            <td> 100</td>
+            <td> 50</td>
+            <td> 50</td> 
+        </tr>
+
+    </table>
+
+    <h2 align="Center">Pedidos</h2>
+
+    <p align="Center"> Tabla de pedidos</p>
+    <br>
+
+    <hr>
+
+    <table width="1300" align="Center">
+        <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Cel o Tel</th>
+            <th>Correo</th>
+            <th>Descripción</th>
+            <th>Sabores</th>
+            <th>Adornos</th>
+        </tr>
+
+        <tr>
+            <td>Dario Chan</td>
+            <td>Calle 27 129, Col. México, México, 97125 Mérida, Yuc.</td>
+            <td>9912305930</td>
+            <td>djcc@gmail.com</td> 
+            <td>Grande</td>
+            <td>Chocolate</td>
+            <td>Galletas</td>
+        </tr>
+
+        <tr>
+            <td>Mariana R.</td>
+            <td>C. 14 38, Colonial Chuburná, 97050 Mérida, Yuc.</td>
+            <td>9922994494</td>
+            <td>mr@gmail.com</td>
+            <td>Chico </td>
+            <td>Red Velvet</td>
+            <td>Letras con Chispas</td>
+        </tr>
+        
+        
+    </table>
+
+    <hr>
+
+
+
+
+    <footer>
+        <p>Dirección: Calle 47, Zona Paseo Montejo, Centro, 97000 Mérida, Yuc.</p>
+        <p>Celular: +52 9919593923</p>
+        <p>Lunes a Domingo de 9:00 AM a 6:00 PM</p>
+    </footer>
+    
+</body>
+</html>
